@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Student"
+	xmlns:tns="http://www.example.org/Student" elementFormDefault="qualified">
+
+	<element name="Student" type="tns:StudentType"></element>
+
+	<complexType name="StudentType">
+		<sequence>
+			<element name="universityCollege" type="tns:universityCollegeType"
+				maxOccurs="unbounded" minOccurs="1"></element>
+		</sequence>
+		<attribute name="id" type="int"></attribute>
+		<attribute name="city" type="string"></attribute>
+		<attribute name="country" type="string"></attribute>
+		<attribute name="dob" type="date"></attribute>
+		<attribute name="emailId" type="string"></attribute>
+		<attribute name="firstname" type="string"></attribute>
+		<attribute name="lastname" type="string"></attribute>
+		<attribute name="midname" type="string"></attribute>
+		<attribute name="mobileNo" type="int"></attribute>
+		<attribute name="permanentaddress" type="string"></attribute>
+		<attribute name="state" type="string"></attribute>
+		<attribute name="tagline" type="string"></attribute>
+		<attribute name="zip" type="string"></attribute>
+	</complexType>
+
+
+	<complexType name="universityCollegeType">
+		<sequence>
+			<element name="department" type="tns:departmentType"
+				maxOccurs="1" minOccurs="1"></element>
+		</sequence>
+		<attribute name="id" type="int"></attribute>
+		<attribute name="univorcollegename" type="string"></attribute>
+	</complexType>
+
+	<complexType name="departmentType">
+		<sequence>
+			<element name="degree" type="tns:degreeType" maxOccurs="1"
+				minOccurs="1"></element>
+		</sequence>
+		<attribute name="id" type="int"></attribute>
+		<attribute name="depttname" type="string"></attribute>
+	</complexType>
+
+	<complexType name="degreeType">
+		<sequence>
+			<element name="semesterYear" type="tns:semesterYearType"
+				maxOccurs="unbounded" minOccurs="1">
+			</element>
+			<element name="accreditation" type="tns:accreditationType"
+				maxOccurs="1" minOccurs="1"></element>
+		</sequence>
+		<attribute name="id" type="int"></attribute>
+		<attribute name="degreeName" type="string"></attribute>
+	</complexType>
+
+	<complexType name="semesterYearType">
+		<sequence>
+			<element name="subjectDetail" type="tns:subjectDetailType"
+				maxOccurs="unbounded" minOccurs="1"></element>
+		</sequence>
+		<attribute name="id" type="int"></attribute>
+		<attribute name="issemester" type="boolean"></attribute>
+		<attribute name="semyear" type="int"></attribute>
+	</complexType>
+
+	<complexType name="subjectDetailType">
+		<sequence>
+			<element name="marksheetSubject" type="tns:marksheetSubjectType"
+				maxOccurs="unbounded" minOccurs="1"></element>
+		</sequence>
+		<attribute name="id" type="int"></attribute>
+		<attribute name="marksmax" type="int"></attribute>
+		<attribute name="subjcode" type="string"></attribute>
+		<attribute name="subjname" type="string"></attribute>
+		<attribute name="subjtag" type="string"></attribute>
+	</complexType>
+
+	<complexType name="marksheetSubjectType">
+		<sequence>
+			<element name="marksheet" type="tns:marksheetType" maxOccurs="1"
+				minOccurs="1"></element>
+		</sequence>
+		<attribute name="id" type="int"></attribute>
+		<attribute name="earnedgrade" type="string"></attribute>
+		<attribute name="marksreceived" type="int"></attribute>
+	</complexType>
+
+	<complexType name="marksheetType">
+		<attribute name="id" type="int"></attribute>
+		<attribute name="isverified" type="boolean"></attribute>
+		<attribute name="marksheetpdf" type="string"></attribute>
+	</complexType>
+
+	<complexType name="accreditationType">
+		<attribute name="id" type="int"></attribute>
+		<attribute name="percentage" type="int"></attribute>
+		<attribute name="cgpaMax" type="int"></attribute>
+		<attribute name="cgpaReceived" type="int"></attribute>
+		<attribute name="cgpaOrPercentageHide" type="boolean"></attribute>
+		<attribute name="depttRank" type="int"></attribute>
+		<attribute name="depttRankHide" type="boolean"></attribute>
+		<attribute name="classRank" type="int"></attribute>
+		<attribute name="classRankHide" type="boolean"></attribute>
+	</complexType>
+</schema>

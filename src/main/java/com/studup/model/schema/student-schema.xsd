@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/student-schema" xmlns:tns="http://www.example.org/student-schema" elementFormDefault="qualified">
+
+
+    <element name="student" type="tns:studentType"></element>
+    
+    <complexType name="studentType">
+    	<attribute name="id" type="int"></attribute>
+    </complexType>
+</schema>

@@ -1,0 +1,76 @@
+<div class="container-fluid">
+<div class="row">
+
+	<header class="col-xs-12 stud-header">
+		<div class="row">
+			<div class="col-xs-12 col-md-3">
+				<img src="app/images/logo.png" alt="Stud-Up" />
+			</div>
+		</div><!-- /.row -->
+	</header>
+	
+	<div class="col-xs-12 stud-main">
+		
+		<div class="row">
+		
+			<div class="col-xs-12 col-md-4 col-md-offset-4 col-sm-offset-0 stud-profile-area">
+				
+				<div class="row">
+					
+					<div class="col-xs-12 stud-add-photo">
+						<a href="#" class="btn btn-stud">
+							<span>+</span>
+							<p>Add Photo</p>
+						</a>
+					</div><!-- /.stud-add-photo -->
+				
+					<div class="col-xs-12 stud-credentials">
+						
+						<form ng-submit="createProfile()" role="form">
+							<div class="form-group">
+								<input type="text" ng-model="formData.firstname" name="firstname" class="form-control" placeholder="First Name" required="true">
+							</div><!-- /.Name -->
+							<div class="form-group">
+								<input type="text" ng-model="formData.midname" name="midname" class="form-control" placeholder="Mid Name">
+							</div><!-- /.Name -->
+							<div class="form-group">
+								<input type="text" ng-model="formData.lastname" name="lastname" class="form-control" placeholder="Last Name">
+							</div><!-- /.Name -->
+							
+							<div class="form-group">
+								<input type="text" ng-model="formData.tagLine" name="tagLine" class="form-control" placeholder="Tagline" required="true">
+							</div><!-- /.Tagline -->
+							
+							<div class="form-group ui-widget">
+								<input type="text" id="collegeOrUniversity" ng-model="formData.collegeOrUniversity" name="collegeOrUniversity" class="form-control" placeholder="College / University" value='' required="true">
+							</div><!-- /.collegeOrUniversity -->
+
+							<div class="form-group ui-widget">
+								<input type="text" id="department" ng-model="formData.department" name="department" class="form-control" placeholder="Department" value='' required="true">
+							</div><!-- /.Degree -->
+
+							<div class="form-group ui-widget">
+								<input type="text" id="highestDegree" ng-model="formData.highestDegree" name="highestDegree" class="form-control" placeholder="Highest degree" value='' required="true">
+							</div><!-- /.Degree -->
+							
+							<div class="stud-submit col-xs-12 text-right">
+								<button type="submit" class="btn btn-stud">Save</button>
+							</div><!-- /.stud-submit -->
+						</form><!-- form -->
+						
+					</div><!-- /.stud-credentials -->
+				
+				</div><!-- /.row -->
+				
+			</div><!-- /.stud-profile-area -->
+		
+		</div><!-- /.row -->
+		
+	</div><!-- /.stud-main -->
+	
+	<div class="col-xs-12 stud-bottom-icons">
+		<a href="/logout"><i class="glyphicon glyphicon-adjust"></i></a>
+	</div>
+	
+</div><!-- Main /.row -->
+</div><!-- Main /.container -->

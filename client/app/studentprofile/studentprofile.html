@@ -1,0 +1,527 @@
+<div class="container-fluid">
+	<div class="row">
+
+		<header class="col-xs-12 stud-header stud-border navbar-fixed-top">
+
+			<div class="col-xs-12 stud-menu">
+
+				<nav class="navbar navbar-static-top">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse" data-target="#navbar"
+								aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only">Navigation</span> <span class="icon-bar"></span>
+								<span class="icon-bar"></span> <span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img
+								src="app/images/logo.png" alt="Stud-Up" /></a>
+						</div>
+
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#"> <i class="fa fa-home fa-lg"></i> <span>My
+											Wall</span>
+								</a></li>
+								<li class="dropdown"><a class="dropdown-toggle"
+									data-toggle="dropdown" href="#" role="button"
+									aria-haspopup="true" aria-expanded="false"> <i
+										class="fa fa-rupee fa-lg"></i> <span>Financial
+											Assistance</span> <span class="caret"></span>
+								</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Scholarship</a></li>
+										<li><a href="#">Internship</a></li>
+									</ul></li>
+								<li><a href="#"> <i class="fa fa-map-marker fa-lg"></i>
+										<span>Placement</span>
+								</a></li>
+								<li><a href="#"> <i class="fa fa-users fa-lg"></i> <span>Collaboration</span>
+								</a></li>
+								<li class="nav-separator"></li>
+								<li class="nav-search">
+									<form class="form-inline">
+										<div class="form-group">
+											<input type="email" class="form-control nav-search"
+												id="exampleInputEmail3" placeholder="Search">
+										</div>
+									</form>
+								</li>
+								<li class="stud-man-icon"><a href="#"> <i
+										class="fa fa-user-circle fa-lg"></i>
+								</a></li>
+							</ul>
+							<!-- /.navbar-right -->
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.class-container -->
+				</nav>
+			</div>
+			<!-- /.stud-menu -->
+
+		</header>
+
+		<div class="col-xs-12 stud-main">
+
+			<div class="row">
+
+				<div class="col-xs-12 col-md-3 col-md-offset-1 stud-profile-area">
+					<div class="affix" data-spy="affix" data-offset-top="10">
+						<div class="stud-profile-circle">
+							<ul class="clearfix">
+								<li class="stud-profile-pic"><a href="#"
+									class="btn btn-profile"><i class="glyphicon glyphicon-plus"></i></a>
+								</li>
+								<li class="stud-education-icon"><a href="#education_box"
+									class="btn btn-stud scroll_education_box"><i class="fa fa-book fa-2x"></i></a></li>
+								<!-- Education image -->
+								<li class="stud-accom-icon"><a href="#accomplishments_box"
+									class="btn btn-stud scroll_accomplishments_box"><i class="fa fa-certificate fa-2x"></i></a>
+								</li>
+								<!-- Accomplishments image -->
+								<li class="stud-projects-icon"><a href="#project_box"
+									class="btn btn-stud scroll_project_box"><i class="fa fa-database fa-2x"></i></a></li>
+								<!-- Projects image -->
+								<li class="stud-personal-icon"><a href="#personal_details_box" 
+									class="btn btn-stud scroll_personal_details_box"><i class="fa fa-address-card fa-2x"></i></a>
+								</li>
+								<!-- Personal image -->
+								<li class="stud-video-icon"><a href="#"
+									class="btn btn-stud"><i class="fa fa-play-circle fa-2x"></i></a>
+								</li>
+								<!-- Video image -->
+							</ul>
+						</div>
+						<!-- /.stud-profile-circle -->
+
+						<h2 ng-bind="fullName"></h2>
+
+						<ul class="col-xs-12 stud-profile-details">
+							<li>
+								<p>
+									<i class="glyphicon glyphicon-briefcase"></i>
+									<span ng-bind="tagLine"></span>
+								</p>
+							</li>
+							<li>
+								<p>
+								<form class="form-inline">
+									<i class="glyphicon glyphicon-earphone"></i>
+									<div class="form-group">
+										<input type="text" class="form-control" id="addPhoneNumber"
+											placeholder="Add phone number">
+									</div>
+								</form>
+								</p>
+							</li>
+							<li>
+								<p>
+								<form class="form-inline">
+									<i class="glyphicon glyphicon-envelope"></i>
+									<div class="form-group">
+										<p ng-bind='emailId'></p>
+									</div>
+								</form>
+								</p>
+							</li>
+							<li>
+								<p>
+								<form class="form-inline">
+									<i class="glyphicon glyphicon-map-marker"></i>
+									<div class="form-group">
+										<input type="text" class="form-control" id="addAdress"
+											placeholder="Add Address">
+									</div>
+								</form>
+								</p>
+							</li>
+						</ul>
+						<!-- /.stud-profile-details -->
+						<div class="col-xs-12 stud-bottom-icons">
+							<div class="col-xs-3">
+								<a href="#"><i class="fa fa-circle"></i></a> 
+								<a href="/../../logout"><i class="fa fa-power-off"></i></a>
+								<a href="#"><i class="fa fa-cog"></i></a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#">View</a> <span class="stud-view-edit"><i
+									class="fa fa-circle"></i></span> <a href="#">Edit</a>
+							</div>
+						</div>
+					</div>
+					<!-- /#affix -->
+				</div>
+				<!-- /.stud-profile-area -->
+
+				<div class="col-xs-12 col-md-6 col-md-offset-1 stud-details-area">
+					
+					<div id='education_box'>
+					
+					<p class="text-center">
+						<i class="fa fa-book fa-4x"></i>
+					</p>
+
+					<h2>Education</h2>
+
+					<div class="stud-details-box">
+
+						<ul class="stud-items">
+<!-- 
+							<li class="stud-single-item">
+								<h3 ng-bind='collegeOrUniversity'></h3>
+								<h4 ng-bind='highestDegree'></h4>
+
+								<p class="item-date">
+									<img src="app/images/calendar.png" alt="calendar" /> Dates
+									Attended*
+								</p> <span class="item-meta">CGPA <span
+									class="stud-highlight">6 of 10</span> <img
+									src="app/images/not-visible.png" alt="Not Visible" /></span> <span
+								class="item-meta">Dept. Rank <img
+									src="app/images/visible.png" alt="Not Visible" /></span> <span
+								class="item-meta">Class Rank <img
+									src="app/images/visible.png" alt="Not Visible" /></span>
+
+								<p class="meta-add">
+									<a href="#">Add marksheet <i
+										class="glyphicon glyphicon-plus-sign"></i></a>
+								</p>
+							</li>
+ -->
+							<li class="stud-single-item" ng-repeat="universityCollege in universityColleges">
+								<h3>{{ universityCollege.univorcollegename}}</h3>
+								<h4>{{ universityCollege.department.degree.degreeName}} ( {{ universityCollege.department.depttname}} )</h4>
+
+								<p class="item-date">
+									<img src="app/images/calendar.png" alt="calendar" /> Dates
+									Attended*
+								</p> <span class="item-meta">CGPA <span
+									class="stud-highlight">6 of 10</span> <img
+									src="app/images/not-visible.png" alt="Not Visible" /></span> <span
+								class="item-meta">Dept. Rank <img
+									src="app/images/visible.png" alt="Not Visible" /></span> <span
+								class="item-meta">Class Rank <img
+									src="app/images/visible.png" alt="Not Visible" /></span>
+
+								<p class="meta-add">
+									<a href="#">Add marksheet <i
+										class="glyphicon glyphicon-plus-sign"></i></a>
+								</p>
+							</li>
+							<!-- /.stud-single-item -->
+
+							<li class="stud-single-item">
+								<p class="item-add">
+									<a href="#">Add another one</a>
+								</p>
+							</li>
+							<!-- /.stud-single-item -->
+
+						</ul>
+						<!-- /.stud-items -->
+
+					</div>
+					<!-- /.stud-details-box -->
+
+					</div>
+					
+					<!-- First Area -->
+
+					<div id='project_box'>
+
+					<p class="text-center">
+						<i class="fa fa-database fa-4x"></i>
+					</p>
+
+					<h2>Projects</h2>
+
+					<div class="stud-details-box">
+
+						<ul class="stud-items">
+
+							<li class="stud-single-item project-item">
+								<h3>JOSH - Cycle Ride Event Poster Design</h3>
+								<p class="project-dates">1 JAN 2016 - 15 JAN 2016 (15 Days)</p>
+								<span>Joy of sharing</span>
+
+								<p>Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has</p>
+
+								<h5>Team Members</h5> <span class="stud-project-item">Shah
+									Rukh</span> <span class="stud-project-item">Salman</span>
+
+								<h5>Skills</h5> <span class="stud-project-item">Acting</span> <span
+								class="stud-project-item">UX</span> <span
+								class="stud-project-item">Designer</span>
+
+							</li>
+							<!-- /.stud-single-item -->
+
+							<li class="stud-single-item project-item">
+								<h3>JOSH - Cycle Ride Event Poster Design</h3>
+								<p class="project-dates">1 JAN 2016 - 15 JAN 2016 (15 Days)</p>
+								<span>Joy of sharing</span>
+
+								<p>Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has</p>
+
+								<h5>Team Members</h5> <span class="stud-project-item">Shah
+									Rukh</span> <span class="stud-project-item">Salman</span>
+
+								<h5>Skills</h5> <span class="stud-project-item">Acting</span> <span
+								class="stud-project-item">UX</span> <span
+								class="stud-project-item">Designer</span>
+
+							</li>
+							<!-- /.stud-single-item -->
+
+							<li class="stud-single-item project-item">
+								<h3>JOSH - Cycle Ride Event Poster Design</h3>
+								<p class="project-dates">1 JAN 2016 - 15 JAN 2016 (15 Days)</p>
+								<span>Joy of sharing</span>
+
+								<p>Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has</p>
+
+								<h5>Team Members</h5> <span class="stud-project-item">Shah
+									Rukh</span> <span class="stud-project-item">Salman</span>
+
+								<h5>Skills</h5> <span class="stud-project-item">Acting</span> <span
+								class="stud-project-item">UX</span> <span
+								class="stud-project-item">Designer</span>
+
+							</li>
+							<!-- /.stud-single-item -->
+
+							<li class="stud-single-item">
+								<p class="item-add">
+									<a href="#">Add another one</a>
+								</p>
+							</li>
+							<!-- /.stud-single-item -->
+
+						</ul>
+						<!-- /.stud-items -->
+
+
+						</ul>
+						<!-- /.stud-items -->
+
+					</div>
+					<!-- /.stud-details-box -->
+
+					</div>
+
+					<!-- Second Area -->
+
+					<div id='personal_details_box'>
+
+					<p class="text-center">
+						<i class="fa fa-address-card fa-4x"></i>
+					</p>
+
+					<h2>Personal Details</h2>
+
+					<div class="stud-details-box">
+
+						<ul class="stud-items">
+
+							<li class="stud-single-item personal-item">
+								<h3>Skills</h3>
+
+								<ul class="personal-skills">
+									<li>
+										<p>Adobe Photoshop</p> <span class="skill-rate-yes"></span> <span
+										class="skill-rate-yes"></span> <span class="skill-rate-yes"></span>
+										<span class="skill-rate-yes"></span> <span
+										class="skill-rate-yes"></span> <span class="skill-rate-yes"></span>
+										<span class="skill-rate-yes"></span> <span
+										class="skill-rate-yes"></span> <span class="skill-rate-yes"></span>
+										<span class="skill-rate-no"></span>
+									</li>
+									<li>
+										<p>Adobe Photoshop</p> <span class="skill-rate-yes"></span> <span
+										class="skill-rate-yes"></span> <span class="skill-rate-yes"></span>
+										<span class="skill-rate-yes"></span> <span
+										class="skill-rate-yes"></span> <span class="skill-rate-yes"></span>
+										<span class="skill-rate-yes"></span> <span
+										class="skill-rate-yes"></span> <span class="skill-rate-no"></span>
+										<span class="skill-rate-no"></span>
+									</li>
+									<li>
+										<p>Adobe Photoshop</p> <span class="skill-rate-yes"></span> <span
+										class="skill-rate-yes"></span> <span class="skill-rate-yes"></span>
+										<span class="skill-rate-yes"></span> <span
+										class="skill-rate-yes"></span> <span class="skill-rate-yes"></span>
+										<span class="skill-rate-yes"></span> <span
+										class="skill-rate-no"></span> <span class="skill-rate-no"></span>
+										<span class="skill-rate-no"></span>
+									</li>
+									<li class="enter-new-skill">
+										<form class="form-inline">
+											<div class="form-group">
+												<input type="text" class="form-control" id="addSkill">
+
+												<span class="skill-rate-no"></span> <span
+													class="skill-rate-no"></span> <span class="skill-rate-no"></span>
+												<span class="skill-rate-no"></span> <span
+													class="skill-rate-no"></span> <span class="skill-rate-no"></span>
+												<span class="skill-rate-no"></span> <span
+													class="skill-rate-no"></span> <span class="skill-rate-no"></span>
+												<span class="skill-rate-no"></span>
+											</div>
+										</form>
+									</li>
+									<li><a href="#" class="add-new-skills"><i
+											class="glyphicon glyphicon-plus"></i></a></li>
+								</ul>
+							</li>
+
+							<li class="stud-single-item personal-item">
+								<h3>Passions</h3>
+
+								<ul class="personal-passions">
+									<li>
+										<p>Sketching</p>
+										<p>Photography</p>
+										<p>Bike Riding</p> <a href="#" class="add-new-passions"><i
+											class="glyphicon glyphicon-plus"></i></a>
+										<form class="form-inline">
+											<div class="form-group">
+												<input type="text" class="form-control" id="addPassion">
+											</div>
+										</form>
+									</li>
+								</ul>
+
+							</li>
+							<!-- /.stud-single-item -->
+
+							<li class="stud-single-item personal-item">
+								<h3>About Me</h3>
+
+								<p>I just love creating beautiful things.</p>
+							</li>
+
+						</ul>
+						<!-- /.stud-items -->
+
+					</div>
+					<!-- /.stud-details-box -->
+					</div>
+					<!-- Third Area -->
+
+					<div id='accomplishments_box'>
+					
+					<p class="text-center">
+						<i class="fa fa-certificate fa-4x"></i>
+					</p>
+
+					<h2>Accomplishments</h2>
+
+					<div class="stud-details-box">
+
+						<ul class="stud-items">
+
+							<li class="stud-single-item stud-item-add">
+
+								<form>
+									<div class="form-group">
+										<input type="text" class="col-xs-3 form-control" id="title"
+											placeholder="Title">
+									</div>
+								</form>
+
+								<form>
+									<div class="form-group">
+										<input type="text" class="col-xs-3 form-control" id="issuer"
+											placeholder="Issuer">
+									</div>
+								</form>
+
+								<form>
+									<div class="form-group">
+										<input type="text" class="col-xs-3 form-control"
+											id="description" placeholder="Description">
+									</div>
+								</form>
+
+								<form>
+									<div class="form-group">
+										<a href="#" class="date-add"><img
+											src="app/images/calendar.png" alt="Calendar" /> Add Date</a>
+									</div>
+								</form>
+							</li>
+							<!-- /.stud-single-item -->
+
+							<li class="stud-single-item">
+								<p class="item-add">
+									<a href="#" data-toggle="modal" data-target="#myModal">Add
+										another one</a>
+								</p>
+							</li>
+							<!-- /.stud-single-item -->
+
+							</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+								aria-labelledby="myModalLabel">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<ul>
+												<li class="stud-volunteer">
+													<h3>Volunteering</h3>
+													<p>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. Lorem Ipsum has</p>
+												</li>
+												<li class="stud-scores">
+													<h3>Test Score</h3>
+													<p>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. Lorem Ipsum has</p>
+												</li>
+												<li class="stud-publications">
+													<h3>Publications</h3>
+													<p>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. Lorem Ipsum has</p>
+												</li>
+												<li class="stud-honors">
+													<h3>Honors & Awards</h3>
+													<p>Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. Lorem Ipsum has</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</ul>
+						<!-- /.stud-items -->
+
+					</div>
+					<!-- /.stud-details-box -->
+
+				</div>
+				<!-- /.stud-details-area -->
+
+			</div>
+			<!-- /.row -->
+
+		</div>
+		<!-- /.stud-main -->
+
+
+	</div>
+	<!-- Main /.row -->
+</div>
+<!-- Main /.container -->
